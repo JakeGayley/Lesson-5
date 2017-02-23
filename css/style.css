@@ -14,7 +14,6 @@ body {
 }
 
 #header {
-    width:100%;
     background-color:none;
     min-height: 80px 
 }
@@ -22,13 +21,12 @@ body {
 #header >h1 {
     margin:0;
     text-align: center;
-    font-family: lato, sans-serif;
+    font-family: 'lato', sans-serif;
     position: relative;
     transform: transformY(50%)
 }
 
 #nav {
-    width:100%;
     background-color: #4E8564;
     min-height: 80px;
     font-family: lato, sans-serif;
@@ -36,44 +34,54 @@ body {
 }
 #nav >ul {
     text-align: center;
-    transform: translateY(50%);
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding: 15px 0 15px 0;
+    margin:0;
 }
 #nav > ul >button{
-min-width: 120px;
+min-width: 178px;
     color: white;
     background-color: #D1B239;
     border: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 15px 32px;
     transition: background-color .25s;
+    border-bottom: 2px solid #4E8564;
 }
 #nav > ul > button:hover {
     background-color: #D19133;
 }
+/*
 .menu {
     display: flex;
     background-color: aliceblue;
     justify-content: space-around;
     list-style-type: none;
+    margin:0;
+    position: relative;
+    transform: translateY(100%);
+    font-family: 'lato', sans-serif;
 }
-
+*/
 #main-content-wrapper {
-    background-color: wheat;
+    background-color: none;
     width: 80%;
-}
+}/*
 #middle-wrapper-width {
     background-color: plum;
     display: flex;
 }
-
+*/
+.side-by-side {
+    
+}
+#main-content-wrapper .image-content {
+    text-align: center;
+    margin:0 auto;
+    margin-top: 50px;
+}
 .image-content > img {
         max-width: 200px;
     border-radius: 50px;
+    border: 4px #4E8564 solid;
 }
 
 .image-content > h4 {
@@ -91,8 +99,7 @@ min-width: 120px;
 }
 
 #main-content-wrapper article {
-    width: 50%;
-    margin: 100px;
+
 }
 #main-content-wrapper article h2 {
     text-align: center;
@@ -111,8 +118,9 @@ min-width: 120px;
 }
 #aside-content-Wrapper {
     background-color:plum;
-    width: 20%;
-    display: flex;
+    font-family: 'lato', sans-serif;
+    background-color: wheat;
+    margin-top: 50px;
 }
 #aside-right {
     margin: 0 50px 0 8px;
@@ -145,6 +153,7 @@ min-width: 120px;
     background-image:url(img/apple-camera-desk-office.jpg);
     border-top: 5px #D1B239 solid;
     border-bottom: 5px #D1B239 solid;
+    text-align: center;
 }
 #favorite-sites ul {
     list-style-type: none;
@@ -153,13 +162,13 @@ min-width: 120px;
     margin: 0;
     padding: 40px
 }
-footer {
+footer { 
     background-color:white;
     text-align: center;
     font-family: 'lato', sans-serif;
-    min-height: 100px
-
-footer > h1 {
-    margin: 0;
-    transform: translateX(50)
+    min-height: 100px;
+}
+.max-width {
+    margin:0 auto;
+    max-width: 960px;
 }

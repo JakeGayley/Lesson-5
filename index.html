@@ -5,60 +5,52 @@
     <meta name="viewport" content="width=device-width, height=device-height, intitial-scale=1, maximum-scale=1, user-scalable=no"> 
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
          
-    <!--Links to css files or font files-->
-    
+    <!--Links to styles-->
+    <link rel="stylesheet" type="text/css" href="css/frameworks.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<!--    <link href="./index_files/css" rel="stylesheet">-->
-    <title>Assignment #1</title>
-    
-</head>
-    
+    </head>
     <body>
-        <div id="container">
-            <header id="header">
-            
-                
-                <h1>Web Ninja</h1>
-          
-            
-            </header>    
-        <nav id="nav">
-                <ul class="buton-wrap">
-                    <button>Schedule</button>
-                    <button>CSS</button>
-                    <button>HTML</button>
-                    <button>Responsive Design</button>
-                        </ul>
-            
-            </nav>
-            <div id="middle-wrapper">
-            <div id="middle-wrapper-width" style="
-    display: flex;
-">
+          <div class="row">
+              <div class='col-12 border'>
+                  <header id="header">            
+
+                  <h1>Web Ninja</h1>
+
+
+                </header>      
+
+            </div>
+
+        </div> 
+<!--End Header-->
+        <div class="row">
+            <div class='col-12 border'>
+               <nav id="nav">
+                    <ul class="buton-wrap">
+                        <button>Schedule</button>
+                        <button>CSS</button>
+                        <button>HTML</button>
+                        <button>Responsive Design</button>
+                    </ul>
+               </nav>
+            </div>
+        </div> 
+<!--End menu-->        
+        <div class='row max-width'>
+            <div class='col-8 border'>
                 
                     <div id="main-content-wrapper">
                         <div id="side-by-side">
-                        <section class="image-content" style="
-    border-radius: 50px;
-    max-width: 200px;
-">
+                        <section class="image-content">
                             
-                            <img src="./index_files/facebook face icon.jpg" style="
-    max-width: 200px;
-    border-radius: 50px;
-">
+                            <img src="images/facebook%20face%20icon.jpg">
                             
                             <h4><a href="https://google.com/">Jake Gayley</a></h4>
                         
                      </section>
-                     <article style="
-">
-                         <h2 style="
-    display: flex;
-">Summary</h2>
-                             <p style="
-    display: block;
-">Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                     <article>
+                         <h2>Summary</h2>
+                             <p>Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                      </p>
                              </article>
                     </div>
@@ -66,16 +58,13 @@
                                 <section id="skills">
                                 <h5>SKILLS: <span>html | css | javascript | git</span></h5></section>
                     </div>
+                </div>
                     <!--end main-content-wrapper-->
-                    <div id="aside-content-wrapper" style="
-    background-color: #eae59c;
-    width: 20%;
-">
+                <div class='col-4 border'>
+                    <div id="aside-content-wrapper">
                         <aside id="aside-right">
                             <h3>Latest Work</h3>
-                            <ul id="latest-work" style="
-    list-style-type: none;
-">
+                            <ul id="latest-work">
                                 <li>Project 1</li>
                                 <li>Project 2</li>
                                 <li>Project 3</li>
@@ -86,31 +75,32 @@
                             </ul>
                         </aside>
                     </div>
-                <!--end aside-content-wrapper-->
-                
-            <!--end max-width-->
+                <!--end aside-content-wrappe-->
             </div>
             <!--end middle-wrapper-->
         </div>    
                 
-        <div id="favorite-sites">
-            <ul>
-                <li><img src="./index_files/facebook icon.png"></li>
-                <li><img src="./index_files/google-plus-icon.png" style="
-    width: 245px;
-"></li>
-                <li><img src="./index_files/twitter1.png"></li>
-            </ul>
+        <div id="favorite-sites" class="row">
+            
+               <div class="col-4 border"> <img src="images/facebook%20icon.png"></div>
+                <div class="col-4 border"> <img src="images/google-plus-icon.png"></div>
+                <div class="col-4 border"> <img src="images/twitter1.png"></div>
+            
                 
         </div>    
-            
-        <footer><h1>Footy</h1></footer>
-        
-       
+        <div class="row">
+            <div class="col-12 border">
+                <footer><h1>Footy</h1></footer>
+            </div>
         </div>
+        
+    <!--end container-->
+    <script src="js/main.js"></script>
+       
     
     
     
     
-    
-</body></html>
+    </body>
+
+</html>
